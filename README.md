@@ -32,7 +32,7 @@ VERBATIM_HEADERS       = NO
 OUTPUT_DIRECTORY       = "source/docs/doxygen"
 mkdir -p source/docs/doxygen
 
-CSS style https://github.com/jothepro/doxygen-awesome-css.git
+CSS style https://github.com/jothepro/doxygen-awesome-css.git ([submodule](https://jothepro.github.io/doxygen-awesome-css/#autotoc_md10))
 HTML_EXTRA_STYLESHEET = YOUR_DOXYGEN_AWESOME_PATH/doxygen-awesome.css
 
 
