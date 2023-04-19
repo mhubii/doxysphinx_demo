@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="adult_8cpp" kind="file" language="C++">
+    <compoundname>adult.cpp</compoundname>
+    <includes refid="adult_8hpp" local="yes">human/adult.hpp</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;human/adult.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="classAdult_1a70bc8058a5775d782f123896864940ac" kindref="member">Adult::Adult</ref>(Characterisitcs<sp/>characterisitcs)<sp/>:<sp/><ref refid="classHuman" kindref="compound">Human</ref>(characterisitcs){};</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">std::string<sp/><ref refid="classAdult_1a65e94dcb23211fb511b30956861c289d" kindref="member">Adult::greet</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Hello<sp/>there!&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/home/martin/Dev/doxysphinx_demo/humanlib/src/adult.cpp"/>
+  </compounddef>
+</doxygen>

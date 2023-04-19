@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_db953db19d66d584d241177cc94655f6" kind="dir">
+    <compoundname>/home/martin/Dev/doxysphinx_demo/humanlib/include</compoundname>
+    <innerdir refid="dir_63ba24759a116577019f7630b2b850a5">/home/martin/Dev/doxysphinx_demo/humanlib/include/human</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/martin/Dev/doxysphinx_demo/humanlib/include/"/>
+  </compounddef>
+</doxygen>

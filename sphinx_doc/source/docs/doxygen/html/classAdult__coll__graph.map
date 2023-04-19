@@ -1,0 +1,5 @@
+<map id="Adult" name="Adult">
+<area shape="rect" id="node1" title="An adult human." alt="" coords="65,171,121,197"/>
+<area shape="rect" id="node2" href="$classHuman.html" title="A human." alt="" coords="58,95,127,121"/>
+<area shape="rect" id="node3" href="$structHuman_1_1Characterisitcs.html" title="Human characteristics." alt="" coords="5,5,180,32"/>
+</map>

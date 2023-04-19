@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="adult_8hpp" kind="file" language="C++">
+    <compoundname>adult.hpp</compoundname>
+    <includes refid="human_8hpp" local="yes">human/human.hpp</includes>
+    <includedby refid="main_8cpp" local="yes">/home/martin/Dev/doxysphinx_demo/humanlib/main.cpp</includedby>
+    <includedby refid="adult_8cpp" local="yes">/home/martin/Dev/doxysphinx_demo/humanlib/src/adult.cpp</includedby>
+    <innerclass refid="classAdult" prot="public">Adult</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;human/human.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classAdult" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAdult" kindref="compound">Adult</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classHuman" kindref="compound">Human</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="classAdult_1a70bc8058a5775d782f123896864940ac" kindref="member">Adult</ref>(<ref refid="structHuman_1_1Characterisitcs" kindref="compound">Characterisitcs</ref><sp/><ref refid="classHuman_1aa8d13b3c0937ad80108d87678fa8546b" kindref="member">characterisitcs</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="classAdult_1a65e94dcb23211fb511b30956861c289d" kindref="member">greet</ref>()<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/adult.hpp"/>
+  </compounddef>
+</doxygen>

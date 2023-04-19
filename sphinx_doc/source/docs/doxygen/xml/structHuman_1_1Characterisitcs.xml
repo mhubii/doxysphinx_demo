@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structHuman_1_1Characterisitcs" kind="struct" language="C++" prot="public">
+    <compoundname>Human::Characterisitcs</compoundname>
+    <includes local="no">human.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structHuman_1_1Characterisitcs_1a4117eacde2f1dac9c2ce55f1a0c82023" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Human::Characterisitcs::weight</definition>
+        <argsstring></argsstring>
+        <name>weight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The weight. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" line="17" column="12" bodyfile="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHuman_1_1Characterisitcs_1a13af447e61cd9527f467f60ed71e7333" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Human::Characterisitcs::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The height. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" line="18" column="12" bodyfile="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classHuman" kindref="compound">Human</ref> characteristics. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" line="16" column="3" bodyfile="/home/martin/Dev/doxysphinx_demo/humanlib/include/human/human.hpp" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structHuman_1_1Characterisitcs_1a13af447e61cd9527f467f60ed71e7333" prot="public" virt="non-virtual"><scope>Human::Characterisitcs</scope><name>height</name></member>
+      <member refid="structHuman_1_1Characterisitcs_1a4117eacde2f1dac9c2ce55f1a0c82023" prot="public" virt="non-virtual"><scope>Human::Characterisitcs</scope><name>weight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
