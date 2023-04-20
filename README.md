@@ -50,9 +50,7 @@ doxygen -g
 ```
 
 - Modify the `Doxyfile`
-Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
-
-Additionally change
+Change
 ```
 INPUT                  = "../../geometry_lib" # the library we added as submodule
 PROJECT_NAME           = "Geometry Lib"
@@ -69,6 +67,9 @@ DOT_TRANSPARENT        = YES
 GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
 HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css" # requires doxygen-awesome, added as a submodule
 ```
+
+Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
+
 
 - Add `Doxygen` and `Doxysphinx` to build
 To [conf.py](doc/source/conf.py) add
