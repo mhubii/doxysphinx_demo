@@ -4,7 +4,7 @@ import subprocess
 subprocess.run("doxygen", shell=True)
 
 # convert doxygen to sphinx
-subprocess.run("doxysphinx build . ../build Doxyfile", shell=True)
+subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=True)
 
 # Configuration file for the Sphinx documentation builder.
 #
