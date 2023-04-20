@@ -102,7 +102,7 @@ E.g., to [index.rst](doc/source/index.rst) add
 API
 ===
 .. toctree::
-   docs/doxygen/html/index
+   docs/doxygen/geometry_lib/html/index
 ```
 
 - Done! This repository can now be hosted on [Read the Docs](https://readthedocs.org/).
