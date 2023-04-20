@@ -33,6 +33,11 @@ VERBATIM_HEADERS       = NO
 
 [See notes](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings)
 OUTPUT_DIRECTORY       = "source/docs/doxygen"
+SEARCHENGINE           = NO
+DOT_IMAGE_FORMAT       = svg <!-- revert to png, readthedocs issues -->
+INTERACTIVE_SVG        = YES <!-- revert to NO, readthedocs issues -->
+GENERATE_TAGFILE       = "docs/doxygen/html/tagfile.xml"
+
 mkdir -p source/docs/doxygen
 
 CSS style https://github.com/jothepro/doxygen-awesome-css.git ([submodule](https://jothepro.github.io/doxygen-awesome-css/#autotoc_md10))
@@ -57,20 +62,23 @@ sphinx-build -b html source/ build/
 Open build/index.html
 
 # Automate Build Steps
-Move Doxyfile to source
+Move Doxyfile to source (add .gitignore)
 
 INPUT                  = "../../humanlib"
 OUTPUT_DIRECTORY       = "docs/doxygen"
 HTML_EXTRA_STYLESHEET  = "../../doxygen-awesome-css/doxygen-awesome.css"
 
-To source/conv.py add
+To source/conv.py add (follow source build dir in [doxyphinx doc](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build))
 ```python
 # generate doxygen
 subprocess.run("doxygen", shell=True)
 
 # convert doxygen to sphinx
-subprocess.run("doxysphinx build . ../build Doxyfile", shell=True)
+subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=True)
 ```
+
+Add `.readthedocs.yaml` with python requirements, python version (doxysphinx > 3.8), submodules
+Add requirements.txt (doxysphinx)
 
 # Host on Read the Docs
 ## Configure Build
