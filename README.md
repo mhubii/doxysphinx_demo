@@ -1,6 +1,8 @@
 # Doxysphinx Demo
 [Doxysphinx](https://boschglobal.github.io/doxysphinx/) converts [Doxygen](https://www.doxygen.nl/) to [Sphinx](https://www.sphinx-doc.org/en/master/). This repository demonstrates how to use [Doxysphinx](https://boschglobal.github.io/doxysphinx/) and how to host it on [Read the Docs](https://readthedocs.org/).
 
+[![Documentation Status](https://readthedocs.org/projects/doxysphinx-demo/badge/?version=latest)](https://doxysphinx-demo.readthedocs.io/en/latest/?badge=latest)
+
 ## Goal
 Generate documentation for a C++ library from docstrings and host it on [Read the Docs](https://readthedocs.org/).
 
