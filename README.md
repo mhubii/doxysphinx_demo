@@ -96,3 +96,5 @@ API
 .. toctree::
    docs/doxygen/html/index
 ```
+
+- Done! This repository can now be hosted on [Read the Docs](https://readthedocs.org/).
