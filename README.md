@@ -62,10 +62,10 @@ HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css" # requir
 SEARCHENGINE           = NO # sphinx has a search engine already
 GENERATE_LATEX         = NO
 GENERATE_XML           = YES
+GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
 DOT_IMAGE_FORMAT       = svg # requires graphviz, to be installed via .readthedocs.yaml
 INTERACTIVE_SVG        = YES
 DOT_TRANSPARENT        = YES
-GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
 ```
 
 Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
