@@ -52,20 +52,20 @@ Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/do
 
 Additionally change
 ```
-INPUT                  = "../../geometry_lib"
+INPUT                  = "../../geometry_lib" # the library we added as submodule
 PROJECT_NAME           = "Geometry Lib"
 RECURSIVE              = YES
 GENERATE_LATEX         = NO
 GENERATE_XML           = YES
-SHOW_FILES             = NO
-VERBATIM_HEADERS       = NO
+SHOW_FILES             = NO # redundant to show files when we document already
+VERBATIM_HEADERS       = NO # as above
 OUTPUT_DIRECTORY       = "docs/doxygen/geometry_lib"
-SEARCHENGINE           = NO
-DOT_IMAGE_FORMAT       = svg
+SEARCHENGINE           = NO # sphinx has a search engine already
+DOT_IMAGE_FORMAT       = svg # requires graphviz, to be installed via .readthedocs.yaml
 INTERACTIVE_SVG        = YES
 DOT_TRANSPARENT        = YES
 GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
-HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css"
+HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css" # requires doxygen-awesome, added as a submodule
 ```
 
 - Add `Doxygen` and `Doxysphinx` to build
