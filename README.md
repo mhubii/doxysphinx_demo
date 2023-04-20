@@ -34,8 +34,8 @@ VERBATIM_HEADERS       = NO
 [See notes](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings)
 OUTPUT_DIRECTORY       = "source/docs/doxygen"
 SEARCHENGINE           = NO
-DOT_IMAGE_FORMAT       = svg <!-- revert to png, readthedocs issues -->
-INTERACTIVE_SVG        = YES <!-- revert to NO, readthedocs issues -->
+DOT_IMAGE_FORMAT       = svg <!-- revert to png, readthedocs issues, requires graphviz https://stackoverflow.com/questions/4388388/error-during-generating-the-doxygen-document -->
+INTERACTIVE_SVG        = YES <!-- revert to NO, readthedocs issues, requires graphviz https://stackoverflow.com/questions/4388388/error-during-generating-the-doxygen-document -->
 GENERATE_TAGFILE       = "docs/doxygen/html/tagfile.xml"
 
 mkdir -p source/docs/doxygen
