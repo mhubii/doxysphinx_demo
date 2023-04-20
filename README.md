@@ -78,7 +78,8 @@ import subprocess
 # generate doxygen
 subprocess.run("doxygen", shell=True)
 
-# convert doxygen to sphinx
+# convert doxygen to sphinx, source and build directory need
+# to follow https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build
 subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=True)
 ```
 
