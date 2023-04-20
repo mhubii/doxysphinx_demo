@@ -52,20 +52,20 @@ doxygen -g
 - Modify the `Doxyfile`
 Change
 ```
-INPUT                  = "../../geometry_lib" # the library we added as submodule
 PROJECT_NAME           = "Geometry Lib"
+OUTPUT_DIRECTORY       = "docs/doxygen/geometry_lib"
+SHOW_FILES             = NO # redundant to show files when we document already
+INPUT                  = "../../geometry_lib" # the library we added as submodule
 RECURSIVE              = YES
+VERBATIM_HEADERS       = NO # redundant to show files when we document already
+HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css" # requires doxygen-awesome, added as a submodule
+SEARCHENGINE           = NO # sphinx has a search engine already
 GENERATE_LATEX         = NO
 GENERATE_XML           = YES
-SHOW_FILES             = NO # redundant to show files when we document already
-VERBATIM_HEADERS       = NO # as above
-OUTPUT_DIRECTORY       = "docs/doxygen/geometry_lib"
-SEARCHENGINE           = NO # sphinx has a search engine already
 DOT_IMAGE_FORMAT       = svg # requires graphviz, to be installed via .readthedocs.yaml
 INTERACTIVE_SVG        = YES
 DOT_TRANSPARENT        = YES
 GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
-HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css" # requires doxygen-awesome, added as a submodule
 ```
 
 Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
@@ -82,6 +82,11 @@ subprocess.run("doxygen", shell=True)
 # convert doxygen to sphinx, source and build directory need
 # to follow https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build
 subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=True)
+```
+
+Change theme in [conf.py](doc/source/conf.py) to
+```python
+html_theme = "sphinx_rtd_theme"
 ```
 
 - Add [.readthedocs.yaml](.readthedocs.yaml)
