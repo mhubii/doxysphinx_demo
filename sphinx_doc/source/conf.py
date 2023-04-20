@@ -1,3 +1,11 @@
+import subprocess
+
+# generate doxygen
+subprocess.run("doxygen", shell=True)
+
+# convert doxygen to sphinx
+subprocess.run("doxysphinx build . ../build Doxyfile", shell=True)
+
 # Configuration file for the Sphinx documentation builder.
 #
 # For the full list of built-in configuration values, see the documentation:
