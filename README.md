@@ -25,4 +25,20 @@ git submodule add https://github.com/mhubii/geometry_lib
 git submodule add https://github.com/jothepro/doxygen-awesome-css
 ```
 
-- 
+- Initialize `Sphinx`
+```shell
+sphinx-quickstart
+```
+
+Answer similar to
+
+```shell
+Separate source and build directories (y/n) [n]: y
+Project name: Geometry Lib
+Author name(s): your_name
+Project release []: 1.0.0
+Project language [en]: en
+```
+
+- Generate a `Doxyfile`
+
