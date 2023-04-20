@@ -49,8 +49,7 @@ cd source
 doxygen -g
 ```
 
-- Modify the `Doxyfile`
-Change
+- Modify the `Doxyfile`. Change
 ```
 PROJECT_NAME           = "Geometry Lib"
 OUTPUT_DIRECTORY       = "docs/doxygen/geometry_lib"
@@ -71,8 +70,7 @@ DOT_TRANSPARENT        = YES
 Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
 
 
-- Add `Doxygen` and `Doxysphinx` to build
-To [conf.py](doc/source/conf.py) add
+- Add `Doxygen` and `Doxysphinx` to build. To [conf.py](doc/source/conf.py) add
 ```python
 import pathlib
 import subprocess
