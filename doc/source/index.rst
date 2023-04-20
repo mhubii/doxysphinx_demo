@@ -22,4 +22,4 @@ Indices and tables
 API
 ===
 .. toctree::
-   docs/doxygen/html/index
+   docs/doxygen/geometry_lib/html
