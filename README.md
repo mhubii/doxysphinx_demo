@@ -103,4 +103,4 @@ API
    docs/doxygen/geometry_lib/html/index
 ```
 
-- Done! This repository can now be hosted on [Read the Docs](https://readthedocs.org/).
+- Done! This repository can now be hosted on [Read the Docs](https://doxysphinx-demo.readthedocs.io/en/latest/?badge=latest).
