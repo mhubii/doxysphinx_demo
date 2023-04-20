@@ -74,10 +74,11 @@ Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/do
 - Add `Doxygen` and `Doxysphinx` to build
 To [conf.py](doc/source/conf.py) add
 ```python
+import pathlib
 import subprocess
 
 # generate doxygen
-subprocess.run("doxygen", shell=True)
+pathlib.Path("docs/doxygen/geometry_lib").mkdir(parents=True) # this is the doxygen OUTPUT_DIRECTORY
 
 # convert doxygen to sphinx, source and build directory need
 # to follow https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build
