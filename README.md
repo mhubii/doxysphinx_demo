@@ -84,3 +84,13 @@ subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=Tru
    - Include submodules
    - Install `graphviz`
    - Add [requirements.txt](requirements.txt) to install `doxysphinx`
+
+- Link to the generated documentation (see [documentation](https://boschglobal.github.io/doxysphinx/docs/linking_to_doxygen.html))
+E.g., to [index.rst](doc/source/index.rst) add
+
+```
+API
+===
+.. toctree::
+   docs/doxygen/html/index
+```
