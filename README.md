@@ -27,6 +27,7 @@ git submodule add https://github.com/jothepro/doxygen-awesome-css
 
 - Initialize `Sphinx`
 ```shell
+mkdir doc && cd doc
 sphinx-quickstart
 ```
 
@@ -40,5 +41,46 @@ Project release []: 1.0.0
 Project language [en]: en
 ```
 
-- Generate a `Doxyfile`
+- Generate a default `Doxyfile`
+```shell
+cd source
+doxygen -g
+```
 
+- Modify the `Doxyfile`
+Also refer to `Doxysphinx` [mandatory settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#mandatory-settings) and [recommended settings](https://boschglobal.github.io/doxysphinx/docs/getting_started.html#recommended-settings).
+
+Additionally change
+```
+INPUT                  = "../../geometry_lib"
+PROJECT_NAME           = "Geometry Lib"
+RECURSIVE              = YES
+GENERATE_LATEX         = NO
+GENERATE_XML           = YES
+SHOW_FILES             = NO
+VERBATIM_HEADERS       = NO
+OUTPUT_DIRECTORY       = "docs/doxygen/geometry_lib"
+SEARCHENGINE           = NO
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+DOT_TRANSPARENT        = YES
+GENERATE_TAGFILE       = "docs/doxygen/geometry_lib/html/tagfile.xml"
+HTML_EXTRA_STYLESHEET = "../../doxygen-awesome-css/doxygen-awesome.css"
+```
+
+- Add `Doxygen` and `Doxysphinx` to build
+To [conf.py](doc/source/conf.py) add
+```python
+import subprocess
+
+# generate doxygen
+subprocess.run("doxygen", shell=True)
+
+# convert doxygen to sphinx
+subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=True)
+```
+
+- Add [.readthedocs.yaml](.readthedocs.yaml)
+   - Include submodules
+   - Install `graphviz`
+   - Add [requirements.txt](requirements.txt) to install `doxysphinx`
