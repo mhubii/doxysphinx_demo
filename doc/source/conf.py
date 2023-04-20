@@ -14,9 +14,9 @@ subprocess.run("doxysphinx build . $READTHEDOCS_OUTPUT/html Doxyfile", shell=Tru
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Human'
-copyright = '2023, mhubii'
-author = 'mhubii'
+project = 'Geometry Lib'
+copyright = '2023, your_name'
+author = 'your_name'
 release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
