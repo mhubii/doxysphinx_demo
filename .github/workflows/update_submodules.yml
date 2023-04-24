@@ -6,26 +6,16 @@ on:
 
 permissions: write-all
 jobs:
-  checkout:
+  update_submodules:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout submodules
         uses: actions/checkout@v3
         with:
           submodules: true
-
-  update:
-    runs-on: ubuntu-latest
-    needs: checkout
-    steps:
       - name: Update submodules
         run: |
           git submodule update --remote
-
-  push:
-    runs-on: ubuntu-latest
-    needs: [checkout, update]
-    steps:
       - name: Commit files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
