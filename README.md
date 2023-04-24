@@ -77,6 +77,7 @@ import subprocess
 
 # generate doxygen
 pathlib.Path("docs/doxygen/geometry_lib").mkdir(parents=True) # this is the doxygen OUTPUT_DIRECTORY
+subprocess.run("doxygen", shell=True)
 
 # convert doxygen to sphinx, source and build directory need
 # to follow https://boschglobal.github.io/doxysphinx/docs/getting_started.html#build
