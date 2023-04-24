@@ -4,7 +4,6 @@ on:
   schedule:
     - cron: '0 0 * * *' # run daily
 
-permissions: write-all
 jobs:
   update_submodules:
     runs-on: ubuntu-latest
