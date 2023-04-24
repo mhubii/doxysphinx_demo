@@ -23,8 +23,8 @@ git init
    - A modern style sheet for Doxygen, [Doxygen Awesome](https://jothepro.github.io/doxygen-awesome-css/)
 
 ```shell
-git submodule add https://github.com/mhubii/geometry_lib
-git submodule add https://github.com/jothepro/doxygen-awesome-css
+git submodule add -b main https://github.com/mhubii/geometry_lib
+git submodule add -b main https://github.com/jothepro/doxygen-awesome-css
 ```
 
 - Initialize `Sphinx`
@@ -104,3 +104,6 @@ API
 ```
 
 - Done! This repository can now be hosted on [Read the Docs](https://doxysphinx-demo.readthedocs.io/en/latest/?badge=latest).
+
+## Auto Update Submodules
+To auto-update the submodules, add a workflow, see [update_submodules.yml](.github/workflows/update_submodules.yml).
