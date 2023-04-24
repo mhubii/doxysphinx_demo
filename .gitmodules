@@ -1,6 +1,8 @@
 [submodule "doxygen-awesome-css"]
 	path = doxygen-awesome-css
 	url = https://github.com/jothepro/doxygen-awesome-css.git
+	branch = main
 [submodule "geometry_lib"]
 	path = geometry_lib
 	url = https://github.com/mhubii/geometry_lib
+	branch = main
