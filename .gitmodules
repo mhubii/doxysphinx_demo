@@ -4,7 +4,3 @@
 [submodule "geometry_lib"]
 	path = geometry_lib
 	url = https://github.com/mhubii/geometry_lib
-[submodule "doxygen-awesome-css/"]
-	branch = main
-[submodule "geometry_lib/"]
-	branch = main
